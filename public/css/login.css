@@ -1,0 +1,96 @@
+html, body {
+    background: url(../img/background.png);
+    color: #636b6f;
+    font-family: 'Raleway', sans-serif;
+}
+
+.index-main-body{
+    width: 300px;
+    margin: 150px auto;
+    padding: 0;
+    min-height: 480px;
+    vertical-align: middle;
+    white-space: normal;
+    /*border: 1px solid #ccc;*/
+}
+.index-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.index-header .logo{
+    width: 160px;
+    height: 74px;
+    font-size: 65px;
+    color: #0f88eb;
+    margin: 0 auto;
+}
+.index-header .subtitle{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+}
+.nav-tabs{
+    width: 200px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 95px;
+    border-bottom: 0;
+}
+.nav-tabs a{
+    color: inherit;
+}
+.nav-tabs a:hover{
+    opacity: 1;
+    color: #0f88eb;
+}
+.nav-tabs .active{
+    margin-right: 35px;
+}
+
+.group-inputs{
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+}
+
+.group-inputs input{
+    width: 100%;
+    height: 47px;
+    border: 0;
+    border-top: 1px solid #e8e8e8;
+    box-shadow: none;
+
+}
+.group-inputs input:first-child{
+    border-top: 0;
+}
+.group-inputs input:focus{
+    border-top: 1px solid #e8e8e8;
+    border-radius: 0;
+    box-shadow: none;
+    background: #fff;
+
+}
+.tab-content .sign-button{
+    width: 100%;
+    margin: 17px auto;
+    background: #0f88eb;
+    box-shadow: none;
+    border: 0;
+    border-radius: 3px;
+    line-height: 41px;
+    color: #fff;
+}
+.tab-content .signin-switch-button{
+    padding: 0;
+    font-size: 14px;
+    color: #5ca5e8;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+}
+.tab-content .unable-login{
+    float: right;
+    color: inherit;
+}
