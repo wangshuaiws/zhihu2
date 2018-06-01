@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.nothing')
 
 @section('content')
     <div class="container">
@@ -11,8 +11,8 @@
 
                 <!-- Nav tabs -->
                 <div class="nav nav-tabs" role="tablist">
-                    <a role="presentation" class="active" href="#register" aria-controls="register" data-toggle="tab">注册</a>
-                    <a role="presentation" href="#login" aria-controls="login" data-toggle="tab">登录</a>
+                    <a role="presentation" class="active"  href="{{ url('/register') }}" aria-controls="register" data-toggle="tab">注册</a>
+                    <a role="presentation" href="{{ url('/login') }}" aria-controls="login" data-toggle="tab">登录</a>
                 </div>
 
                 <!-- Tab panes -->
@@ -39,7 +39,7 @@
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
                                 @endif
-                                <input required="" type="text" class="form-control" name="password" aria-label="密码" placeholder="密码不少于六位">
+                                <input required="" type="password" class="form-control" name="password" aria-label="密码" placeholder="密码不少于六位">
                                 @if ($errors->has('password'))
                                     <span class="help-block" style="color: red">
                                         <strong>{{ $errors->first('password') }}</strong>
@@ -48,20 +48,6 @@
                             </div>
                             <button class="sign-button submit" type="submit">注册畅言</button>
                             <p class="agreement-tip">点击「注册」按钮，即代表你同意<a href="/terms" target="_blank">《畅言协议》</a></p>
-                        </form>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="login">
-                        <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
-                            {{ csrf_field() }}
-                            <div class="group-inputs">
-                                <input type="text" name="account" aria-label="手机号" placeholder="手机号" required="">
-                                <input type="text" name="password" aria-label="密码" placeholder="密码" required="">
-                            </div>
-                            <button class="sign-button submit" type="submit">登录</button>
-                            <div class="signin-misc-wrapper clearfix">
-                                <button type="button" class="signin-switch-button">手机验证码登录</button>
-                                <a class="unable-login" href="#">无法登录？</a>
-                            </div>
                         </form>
                     </div>
                 </div>

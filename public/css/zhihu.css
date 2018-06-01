@@ -1,0 +1,269 @@
+
+.app-main .home {
+    display: flex;
+  }
+  .app-main .home .main {
+    flex: 7;
+    margin-right: 10px;
+  }
+
+.app-main .home .main .card button{
+  outline:none;
+}
+
+  .app-main .home .main .card .card-hender {
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    line-height: 58px;
+    padding: 0 20px;
+  }
+  .app-main .home .main .card .card-hender .card-header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    line-height: 58px;
+    padding: 0 20px;
+  }
+  .app-main .home .main .card .link {
+    margin-left: 40px;
+    display: inline-block;
+    transition: color .2s ease-in;
+    font-size: 16px;
+    color: #1a1a1a;
+    border:0;
+    background-color:transparent;
+  }
+
+  .app-main .home .main .card .link i {
+    margin-right: 8px;
+    color: #1a1a1a;
+    font-size: 18px;
+  }
+  .app-main .home .main .card .link:first-child {
+    margin-left: 20px;
+  }
+  .app-main .home .main .main-content {
+    padding-bottom: 20px;
+  }
+  .app-main .home .main .main-content .item {
+    position: relative;
+    padding: 16px 20px;
+    min-height: 100px;
+    background-color: #fff;
+  }
+  .app-main .home .main .main-content .item .close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    transition: opacity .3s;
+    height: auto;
+    padding: 0;
+    line-height: inherit;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+  }
+  .app-main .home .main .main-content .item .close i {
+    font-size: 20px;
+  }
+  .app-main .home .main .main-content .item .feed .frist-line {
+    margin-bottom: 8px;
+    color: #8590a6;
+  }
+  .app-main .home .main .main-content .item .feed .frist-line a {
+    color: inherit;
+  }
+  .app-main .home .main .main-content .item .author-info {
+    margin-bottom: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .app-main .home .main .main-content .item .author-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 10px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-left: 14px;
+    overflow: hidden;
+  }
+  .app-main .home .main .main-content .item .author-content .info-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 15px;
+    line-height: 1.1;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+  .app-main .home .main .main-content .item .author-content .info-head .user-name {
+    font-weight: 600;
+    color: #444;
+  }
+  .app-main .home .main .main-content .item .author-content .info-detil {
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 2px;
+    font-size: 14px;
+  }
+  .app-main .home .main .main-content .item .author-content .info-detil .text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #646464;
+    word-break: break-word;
+  }
+  .app-main .home .main .main-content .item .item-title {
+    font-size: 18px;
+    font-weight: 600;
+    font-synthesis: style;
+    line-height: 1.6;
+    color: #1a1a1a;
+    margin-top: -4px;
+    margin-bottom: -4px;
+  }
+  .app-main .home .aside {
+    flex: 3;
+    margin-left: 10px;
+    background-color: #fff;
+    font-size: 14px;
+  }
+  .app-main .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    position: relative;
+    width: 1000px;
+    padding: 0 16px;
+    margin: 10px auto;
+  }
+  .button {
+    display: inline-block;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 32px;
+    color: #8590a6;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-radius: 3px;
+  }
+  .card {
+    margin-bottom: 10px;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  .popover {
+    position: relative;
+    display: inline-block;
+    border:none;
+    -webkit-box-shadow:none;
+    background-color: transparent;
+  }
+  body {
+    background-color: #f3f3f3;
+  }
+  .avatar {
+    vertical-align: top;
+    background: #fff;
+    border-radius: 2px;
+  }
+  .item-meta {
+    margin-top: 6px;
+  }
+  .vote-button {
+    padding: 0 10px;
+    color: #0084ff;
+    background: rgba(0, 132, 255, 0.1);
+    border-color: transparent;
+  }
+  .item-content {
+    line-height: 1.67;
+  }
+  .item-content .answer-info　 {
+    margin-top: 10px;
+    margin-bottom: -4px;
+    font-size: 14px;
+    color: #8590a6;
+  }
+  .item-content .answer-info　 .voters {
+    color: #8590a6;
+    height: auto;
+    padding: 0;
+    line-height: inherit;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+  }
+  .item-content .content-inner {
+    margin-top: 9px;
+    margin-bottom: -4px;
+    overflow: hidden;
+    font-size: 15px;
+    height:90px;
+  }
+  .item-content .item-time {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #8590a6;
+  }
+  .item-content .item-actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 -20px -10px;
+    color: #646464;
+    background: #fff;
+    clear: both;
+    font-size: 14px;
+  }
+  .item-content .item-actions .action {
+    margin-left: 14px;
+  }
+  .item-content .item-actions .action i {
+    margin-right: 5px;
+  }
+  .panel-body{
+    padding: 0;
+  }
+  .badge{
+    background: none;
+    color: #8590a6;
+    font-size: 14px;
+  }
+

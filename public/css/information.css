@@ -1,0 +1,99 @@
+.main {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    z-index: 10;
+    top: 60px;
+    left: 19%;
+    /*background-color: #fff;*/
+}
+
+.homepage{
+    border: 1px solid #E6E6FA;
+    height: 354px;
+    background-color: #fff;
+}
+
+.home-back{
+    width: 1000px;
+    height: 240px;
+    background: url(../img/home-back.png);
+}
+.avatar{
+    width: 168px;
+    height: 168px;
+    position: relative;
+    top: -84px;
+    left: 20px;
+    border-radius: 10px;
+    display: inline;
+}
+.personal{
+    width: 780px;
+    position: relative;
+    top:-150px;
+    left: 220px;
+}
+.middle-main{
+    width: 694px;
+    /*height: 800px;*/
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    background-color: #fff;
+    float: left;
+}
+.middle-nav {
+    font:15px verdana, arial, sans-serif;
+}
+.middle-nav li {
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+.middle-nav li {
+    float:left;
+}
+.middle-nav li,.middle-right a {
+    display:block;
+    padding:0 20px;
+}
+.middle-right{
+    float: right;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+.middle-right a{
+    width: 148px;
+    height: 74px;
+    font-size: 14px;
+    padding-top: 10px;
+    float: right;
+}
+.middle-right a:first-child{
+    border-left: 1px solid #E6E6FA;
+}
+.profile{
+    position: relative;
+    float: left;
+}
+.Profile-lightItem{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 46px;
+    font-size: 14px;
+    border-top: 1px solid #ebebeb;
+}
+.lightItemValue{
+    position: absolute;
+    right:0;
+}
+#main-body{
+    background-color: #fff;
+    padding-left: 15px;
+    padding-top: 15px;
+    height: 85px;
+    overflow: hidden;
+}

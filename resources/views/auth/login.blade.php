@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.nothing')
 
 @section('content')
 <div class="container">
@@ -11,30 +11,23 @@
 
             <!-- Nav tabs -->
             <div class="nav nav-tabs" role="tablist">
-                <a role="presentation" class="active" href="#register" aria-controls="register" data-toggle="tab">注册</a>
-                <a role="presentation" href="#login" aria-controls="login" data-toggle="tab">登录</a>
+                <a role="presentation" class="active" href="{{ url('/register') }}" aria-controls="register" data-toggle="tab">注册</a>
+                <a role="presentation"  href="{{ url('/login') }}" aria-controls="login" data-toggle="tab">登录</a>
             </div>
 
             <!-- Tab panes -->
             <div class="tab-content">
-                <div role="tabpanel" class="tab-pane" id="register">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
-                        {{ csrf_field() }}
-                    <div class="group-inputs">
-                        <input required="" type="text" name="fullname" aria-label="姓名" placeholder="昵称">
-                        <input required="" type="text" name="phone" aria-label="手机号" placeholder="手机号">
-                        <input required="" type="text" name="password" aria-label="密码" placeholder="密码不少于六位">
-                    </div>
-                    <button class="sign-button submit" type="submit">注册畅言</button>
-                    <p class="agreement-tip">点击「注册」按钮，即代表你同意<a href="/terms" target="_blank">《畅言协议》</a></p>
-                    </form>
-                </div>
                 <div role="tabpanel" class="tab-pane active" id="login">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
                         {{ csrf_field() }}
                     <div class="group-inputs">
-                        <input type="text" name="account" aria-label="手机号" placeholder="手机号" required="">
-                        <input type="text" name="password" aria-label="密码" placeholder="密码" required="">
+                        <input type="text" class="form-control" name="login" aria-label="手机号" placeholder="手机号或邮箱" required="">
+                        <input type="password" class="form-control" name="password" aria-label="密码" placeholder="密码" required="">
+                        @if ($errors->has('login'))
+                            <span class="help-block" style="color: red">
+                                        <strong>{{ $errors->first('login') }}</strong>
+                                    </span>
+                        @endif
                     </div>
                     <button class="sign-button submit" type="submit">登录</button>
                     <div class="signin-misc-wrapper clearfix">
