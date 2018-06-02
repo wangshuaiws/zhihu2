@@ -137,6 +137,7 @@ class HomeController extends Controller
             $user = User::findOrFail(Auth::id());
             $user->update($data);
         }
+		return view('project.information_edit',compact('user'));
     }
 
     public function search(Request $request)

@@ -73,7 +73,6 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
             'avatar' => '/images/3.jpg',
             'api_token' => str_random(60),
-            'settings' => json_encode(['field-message' => '']),
             'confirmation_token' => str_random(40),
         ]);
     }
