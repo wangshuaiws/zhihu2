@@ -35,6 +35,7 @@ class HomeController extends Controller
             foreach($questions as $key => $question) {
                // $value =  Question::findOrFail($question->id);
                 //dd($question->topics()->first());
+				//qwr
                 $answer = Answer::where('question_id','=',$question->id)->first();
                 if($answer) {
                     $users = User::findOrFail($answer->user_id);
